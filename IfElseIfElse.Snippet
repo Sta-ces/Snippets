@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Shortcut>ELSEIF</Shortcut>
+      <Title>
+        if(condition1){}elseif(condition2){}else{}
+      </Title>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <Default>Condition 1</Default>
+          <ID>condition1</ID>
+        </Literal>
+        <Literal Editable="true">
+          <Default>Condition 2</Default>
+          <ID>condition2</ID>
+        </Literal>
+        <Literal Editable="true">
+          <Default>else{}</Default>
+          <ID>else</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[if($condition1$){
+        $end$
+        }else if($condition2$){
+        
+        }
+        $else$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
